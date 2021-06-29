@@ -3,24 +3,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace CamJam
+namespace AlephVault.Unity.CamJam
 {
-    namespace Behaviours
+    namespace Authoring
     {
-        [RequireComponent(typeof(JammedCamera))]
-        public abstract class CameraJammingEffect : MonoBehaviour
+        namespace Behaviours
         {
-            [SerializeField]
-            private uint priority;
-
-            private JammedCamera jammedCamera;
-
-            private void Start()
+            [RequireComponent(typeof(JammedCamera))]
+            public abstract class CameraJammingEffect : MonoBehaviour
             {
-                GetComponent<JammedCamera>().Register(priority, Tick);
-            }
+                [SerializeField]
+                private uint priority;
 
-            protected abstract void Tick(Camera camera);
+                private JammedCamera jammedCamera;
+
+                private void Start()
+                {
+                    GetComponent<JammedCamera>().Register(priority, Tick);
+                }
+
+                protected abstract void Tick(Camera camera);
+            }
         }
     }
 }
