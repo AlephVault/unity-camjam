@@ -1,0 +1,13 @@
+{
+  "name": "com.alephvault.unity.camjam",
+  "version": "0.0.1",
+  "displayName": "Aleph Vault - Unity - CamJam",
+  "description": "Several camera movement / jamming utilities.",
+  "unity": "2018.1",
+  "dependencies": {},
+  "author": {
+    "name": "Aleph Vault",
+    "email": "info@alephvault.com",
+    "url": "http://www.alephvault.com"
+  }
+}
