@@ -1,4 +1,4 @@
-# Unity Support
+# Unity CamJam
 This package contains several camera movement / jamming utilities.
 
 # Install
